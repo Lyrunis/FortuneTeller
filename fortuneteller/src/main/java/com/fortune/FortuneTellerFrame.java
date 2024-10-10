@@ -34,7 +34,7 @@ public class FortuneTellerFrame extends JFrame {
         JPanel topPanel = new JPanel(new BorderLayout());
         
         JLabel titleLabel = new JLabel("Chris Vu's Magic 8-Ball", JLabel.CENTER);
-        ImageIcon icon = new ImageIcon("your-8ball-image-path.png"); // Replace with your 8-ball image path
+        ImageIcon icon = new ImageIcon(getClass().getClassLoader().getResource("AteBall.png"));
         titleLabel.setIcon(icon);
         titleLabel.setHorizontalTextPosition(JLabel.CENTER);
         titleLabel.setVerticalTextPosition(JLabel.BOTTOM);
